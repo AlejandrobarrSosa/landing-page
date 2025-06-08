@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi página con Bootstrap 5</title>
+    <!-- Bootstrap 5 CSS desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="fixed-background"></div>
+
+    <!-- Navbar básica -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">DiecastCars</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="main" class="container position-relative">
+        <div id="img_background" class="position-relative">
+            <!-- Imagen principal -->
+            <img src="imgs/background.jpg" alt="Auto a escala de porsche 911 del año 2012" class="img-fluid w-100">
+
+            <!-- Título centrado -->
+            <div class="d-none d-md-block">
+                <div
+                    class="position-absolute top-0 start-50 translate-middle-x text-white text-center p-3 bg-dark bg-opacity-50 rounded">
+                    <h1 class="display-4">Nuestros Productos</h1>
+                </div>
+            </div>
+            <div class="d-block d-md-none text-center mt-3">
+                <h1 class="h4 fw-bold text-white">Nuestros Productos</h1>
+            </div>
+        </div>
+
+        <!-- Catálogo de productos -->
+        <div id="gallery" class="row text-center mt-5">
+            <!-- Columna Clásicos -->
+            <div class="col-sm-12 col-md-4 d-flex flex-column">
+                <h5 class="text-white">Clásicos</h5>
+
+                <!-- Tarjetas Clásicos -->
+                <div class="card mt-4 h-100">
+                    <img src="imgs/clasics/stingray.jpg" class="card-img-top" alt="Chevy Stingray">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevy Stingray 1969</h5>
+                        <p class="card-text">Una joya americana con diseño musculoso. Escala 1:24.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/clasics/model-a.webp" class="card-img-top" alt="Ford Model A">
+                    <div class="card-body">
+                        <h5 class="card-title">Ford Model A 1931</h5>
+                        <p class="card-text">Elegancia vintage para coleccionistas exigentes.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/clasics/mercedes_36.webp" class="card-img-top" alt="Mercedes 1936">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes-Benz 500K 1936</h5>
+                        <p class="card-text">Detalles de lujo en una escala impecable.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Modernos -->
+            <div class="col-sm-12 col-md-4 d-flex flex-column">
+                <h5 class="text-white">Modernos</h5>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/moderns/ferrari_f50.webp" class="card-img-top" alt="Ferrari F50">
+                    <div class="card-body">
+                        <h5 class="card-title">Ferrari F50</h5>
+                        <p class="card-text">Potencia y lujo. Rojo pasión. Escala 1:18.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/moderns/ferrari_rally.webp" class="card-img-top" alt="Ferrari Rally">
+                    <div class="card-body">
+                        <h5 class="card-title">Ferrari Rally Edición</h5>
+                        <p class="card-text">Edición especial de rally. Pura adrenalina.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/moderns/huayra.webp" class="card-img-top" alt="Pagani Huayra">
+                    <div class="card-body">
+                        <h5 class="card-title">Pagani Huayra</h5>
+                        <p class="card-text">Diseño futurista, perfecto para destacar.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Película -->
+            <div class="col-sm-12 col-md-4 d-flex flex-column">
+                <h5 class="text-white">Película</h5>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/films/challenger70.webp" class="card-img-top" alt="Dodge Challenger 1970">
+                    <div class="card-body">
+                        <h5 class="card-title">Dodge Challenger 1970</h5>
+                        <p class="card-text">La estrella de las persecuciones en los 70s.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/films/ghostbuster.webp" class="card-img-top" alt="Ecto-1 Ghostbusters">
+                    <div class="card-body">
+                        <h5 class="card-title">Ecto-1 Ghostbusters</h5>
+                        <p class="card-text">¡Quién vas a llamar? Este carro icónico te espera.</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card mt-4 h-100">
+                    <img src="imgs/films/delorean.webp" class="card-img-top" alt="DeLorean">
+                    <div class="card-body">
+                        <h5 class="card-title">DeLorean DMC-12</h5>
+                        <p class="card-text">Viaja al pasado con estilo. ¡Volver al futuro!</p>
+                        <button class="btn btn-outline-dark">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer simple -->
+    <footer class="bg-black text-white text-center py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Resumen -->
+                <div class="col-sm-12 col-md-4 mb-4">
+                    <h5 class="text-uppercase">Resumen</h5>
+                    <p class="small">
+                        En <strong>DiecastCars</strong> nos apasiona el detalle. Ofrecemos autos a escala de alta
+                        calidad, desde clásicos legendarios hasta modelos modernos y piezas icónicas del cine.
+                        ¡Colecciona con estilo y precisión!
+                    </p>
+                </div>
+
+                <!-- Contacto -->
+                <div class="col-sm-12 col-md-4 mb-4" id="contacto">
+                    <h5 class="text-uppercase">Contacto</h5>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-envelope"></i> contacto@diecastcars.co</li>
+                        <li><i class="bi bi-phone"></i> +57 300 123 4567</li>
+                        <li><i class="bi bi-instagram"></i> @diecastcars_col</li>
+                    </ul>
+                </div>
+
+                <!-- Ubicación con mapa -->
+                <div class="col-sm-12 col-md-4">
+                    <h5 class="text-uppercase">Ubicación</h5>
+                    <p class="small">Showroom ficticio: Calle 123 #45-67, Bogotá, Colombia</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.711183413957!2d-74.06282748458315!3d4.658560696637228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c8f225c317%3A0xd1e9644716217191!2sCalle%20123%20%2345-67%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1620000000000!5m2!1ses-419!2sco"
+                        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap 5 JS y Popper.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
